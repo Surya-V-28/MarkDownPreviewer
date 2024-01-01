@@ -1,4 +1,4 @@
-# Markdown Previewer
+# Markdown Previewer Free Code Camp
 
 A versatile Markdown Previewer built using a modern web stack. This project leverages the power of React and Redux for the frontend, integrating with external APIs to enhance functionality. The user-friendly interface is crafted with CSS, while the dynamic rendering of Markdown content is handled by JavaScript.
 
