@@ -8,16 +8,30 @@
     box-sizing: border-box;
 }
 .preview-container img {
-    max-width: 100%; /* Image won't exceed the container width */
-    height: auto;    /* Maintain the aspect ratio */
-  }
-
+    max-width: 100%; 
+    height: auto;   
+  } 
+/*  
 .preview-container pre {
     background-color: rgb(42, 40, 40);
     color: white;
     border-radius: 4px;
     padding: 5px;
-}
+} */
+
+code {
+    background-color: #444857;
+    color: #ffffff;
+    padding: .25vw .5vw;
+    border-radius: 5px;
+  }
+  
+  pre code {
+    background-color: #292e5e;
+    color: white;
+    padding: .25vw .5vw; 
+    display: inline-block;
+  }
 
 .preview-editor-title-1 {
     display: none;

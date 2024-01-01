@@ -32,9 +32,24 @@ import React, { useEffect, useState } from 'react';
 
 import { connect } from 'react-redux';
 import marked  from 'marked';
+import hljs from 'highlight.js';
+import 'highlight.js/styles/github.css';
 
 const Preview = ({ markdownInput }) => {
   const [renderedMarkdown, setRenderedMarkdown] = useState('');
+  
+var renderer = new marked.Renderer()
+
+renderer.link = function(href, title, text) {
+  return `<a href=${href} target="_blank">${text}</a>`
+}
+marked.setOptions({
+  renderer,
+  highlight: function(code) {
+    return hljs.highlightAuto(code).value;
+  },
+  breaks: true
+});
 
   useEffect(() => {
     // Use marked.js to render the markdown content
