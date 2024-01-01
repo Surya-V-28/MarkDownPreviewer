@@ -31,7 +31,7 @@ import './Preview.css'
 import React, { useEffect, useState } from 'react';
 
 import { connect } from 'react-redux';
-import { marked } from 'marked';
+import marked  from 'marked';
 
 const Preview = ({ markdownInput }) => {
   const [renderedMarkdown, setRenderedMarkdown] = useState('');
@@ -39,13 +39,14 @@ const Preview = ({ markdownInput }) => {
   useEffect(() => {
     // Use marked.js to render the markdown content
     setRenderedMarkdown(marked(markdownInput));
+    console.log("loaded");
   }, [markdownInput]);
 
   return (
     <>
     <div className="preview-editor-title-1"> 
     <p>Preview</p>
-    <p>V</p>
+    <p>U</p>
     </div>
     <div className="preview-container" id="preview">
 
