@@ -1,0 +1,54 @@
+
+
+.editor-parent {
+    width: 50%;
+    border-right: 1px solid black;
+    min-height: 80vh;
+    max-height: max-content;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    display: flex;
+
+}
+
+.linenumber {
+    counter-reset: line;
+    padding: 10px;
+    width: fit-content;
+    background-color: #f1f1f1;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s all ease-in-out;
+}
+
+.line-numbers span {
+    counter-increment: line;
+    display: inline;
+    color: #666;
+    margin-bottom: 13px;
+  }
+
+  .code-editor {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none; 
+    border-left:1px solid black;
+    line-height: 1.4; 
+    font-size: large;
+    min-height: 80vh;
+    max-height: max-content;
+  }
+
+
+
+
+@media screen and (max-width:768px) {
+  
+  .editor-parent {
+    width: 100%;
+  
+  }
+}

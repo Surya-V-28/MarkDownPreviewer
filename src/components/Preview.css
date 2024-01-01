@@ -1,0 +1,47 @@
+
+.preview-container{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+.preview-container img {
+    max-width: 100%; /* Image won't exceed the container width */
+    height: auto;    /* Maintain the aspect ratio */
+  }
+
+.preview-container pre {
+    background-color: rgb(42, 40, 40);
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.preview-editor-title-1 {
+    display: none;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(186, 186, 186);
+    border: 1px solid lightslategray;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+  }
+
+@media screen and (max-width:768px) {
+    .preview-container {
+        padding-left: 15px;
+        width: 100%;
+        border-top: 1px solid black;
+    }
+    .preview-editor-title-1  {
+        display: flex;
+        padding-left: 10px;
+    }
+    
+}
